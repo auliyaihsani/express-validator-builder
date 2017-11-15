@@ -1,0 +1,33 @@
+{
+  "name": "express-validator-builder",
+  "version": "1.0.0",
+  "description": "ctavan/express-validator validation schema builder for mongo",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edgracilla/express-validator-builder.git"
+  },
+  "author": "ed.gracilla@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edgracilla/express-validator-builder/issues"
+  },
+  "homepage": "https://github.com/edgracilla/express-validator-builder#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-env": "^0.4.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-plumber": "^1.1.0",
+    "gulp-standard": "^10.1.1",
+    "jshint": "^2.9.5",
+    "restify": "^6.3.2"
+  },
+  "dependencies": {
+    "express-validator": "^4.3.0",
+    "lodash": "^4.17.4",
+    "mongoose": "^4.13.2"
+  }
+}

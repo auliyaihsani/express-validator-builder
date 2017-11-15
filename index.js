@@ -1,1 +1,1 @@
-module.exports = require('./lib/validator-builder.js');
+module.exports = require('./lib/validator-builder.js')

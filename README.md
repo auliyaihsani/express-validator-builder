@@ -1,2 +1,2 @@
 # express-validator-builder
-Validation schema builder for mongo that uses `ctavan/express-validator`
+`ctavan/express-validator` validation schema builder for mongo

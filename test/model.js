@@ -20,6 +20,11 @@ module.exports = () => {
         index: true,
         trim: true
       },
+      enums: {
+        type: String,
+        enum: ['pending', 'scheduled', 'accomplished'],
+        default: 'pending'
+      },
       ref: {
         type: String,
         ref: `Demo1`,

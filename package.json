@@ -20,6 +20,8 @@
     "lodash": "^4.17.4"
   },
   "devDependencies": {
-    "mongoose": "^4.13.2"
+    "mocha": "^4.0.1",
+    "mongoose": "^4.13.2",
+    "should": "^13.1.3"
   }
 }

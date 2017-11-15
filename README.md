@@ -1,10 +1,11 @@
 # express-validator-builder
-`ctavan/express-validator` validation schema builder for mongo.
+[ctavan/express-validator](https://github.com/ctavan/express-validator) validation schema builder for mongo.
 
 This is not a fully grown project, lots of things are needed to implement like support for: 
 - custom validation
 - unique validation
 - build generic rule file to support other DBs
+- support other validations from [chriso/validator.js](https://github.com/chriso/validator.js)
 - etc.
 
 ## Installation

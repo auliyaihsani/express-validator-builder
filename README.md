@@ -12,7 +12,7 @@ This is not a fully grown project, lots of things are needed to implement like s
 `npm i -S express-validator-builder`
 
 ## Usage
-```
+```js
 let options = {
   uuid: true // attach 'isUUID' validation to all ref's & _id's (default: true)
 }
@@ -27,7 +27,7 @@ console.log(validationSchema) // see result below
 ## Simple Rule Build
 
 #### Mongoose Schema - Simple
-```
+```js
 let schema = new mongoose.Schema({
   _id: {
     type: String,
@@ -50,7 +50,7 @@ let schema = new mongoose.Schema({
 ```
 
 #### Result - Simple
-```
+```json
 {
   "_id": {
     "notEmpty": {
@@ -86,7 +86,7 @@ let schema = new mongoose.Schema({
 ## Complex Rule Build
 
 #### Mongoose Schema - Complex
-```
+```js
 let Schema = mongoose.Schema
 let schema = new Schema({
   ref: {
@@ -147,7 +147,7 @@ let schema = new Schema({
 ```
 
 #### Result - Complex
-```
+```json
 {
   "ref": {
     "notEmpty": {

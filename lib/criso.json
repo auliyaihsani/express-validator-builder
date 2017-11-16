@@ -1,0 +1,143 @@
+{
+  "isEmail": {
+    "errorMessage": "Value for field '%1$s' must be a valid email address"
+  },
+  "isURL": {
+    "errorMessage": "Value for field '%1$s' must be a valid url"
+  },
+  "isMACAddress": {
+    "errorMessage": "Value for field '%1$s' must be a valid mac address"
+  },
+  "isIP": {
+    "errorMessage": "Value for field '%1$s' must be a valid IP address"
+  },
+  "isFQDN": {
+    "errorMessage": "Value for field '%1$s' must be a valid FQDN"
+  },
+  "isBoolean": {
+    "errorMessage": "Expecting 'boolean' value for field '%1$s'"
+  },
+  "isAlpha": {
+    "errorMessage": "Value for field '%1$s' must be in alpa characters"
+  },
+  "isAlphanumeric": {
+    "errorMessage": "Value for field '%1$s' must be in alpa-numeric characters"
+  },
+  "isNumeric": {
+    "errorMessage": "Value for field '%1$s' must be in numeric characters"
+  },
+  "isLowercase": {
+    "errorMessage": "Value for field '%1$s' should be in lowercase"
+  },
+  "isUppercase": {
+    "errorMessage": "Value for field '%1$s' should be in uppercase"
+  },
+  "isAscii": {
+    "errorMessage": "Value for field '%1$s' must be in ASCII characters"
+  },
+  "isFullWidth": {
+    "errorMessage": "Value for field '%1$s' must be in full-width forms"
+  },
+  "isHalfWidth": {
+    "errorMessage": "Value for field '%1$s' must be in half-width forms"
+  },
+  "isVariableWidth": {
+    "errorMessage": "Value for field '%1$s' must be in full-width or half-width forms"
+  },
+  "isHash": {
+    "errorMessage": "Value for field '%1$s' must be a hash string"
+  },
+  "isMultibyte": {
+    "errorMessage": "Value for field '%1$s' must be in multi-byte characters"
+  },
+  "isSurrogatePair": {
+    "errorMessage": "Value for field '%1$s' must be a surrogate pair characters"
+  },
+  "isInt": {
+    "errorMessage": "Expecting 'int' for field '%1$s'"
+  },
+  "isFloat": {
+    "errorMessage": "Expecting 'float' for field '%1$s'"
+  },
+  "isDecimal": {
+    "errorMessage": "Expecting 'decimal' for field '%1$s'"
+  },
+  "isHexadecimal": {
+    "errorMessage": "Expecting 'hexadecimal' for field '%1$s'"
+  },
+  "isDivisibleBy": {
+    "errorMessage": "Value for field '%1$s' must be divisible by '%2$s'"
+  },
+  "isHexColor": {
+    "errorMessage": "Value for field '%1$s' must be a valid hexadecimal color"
+  },
+  "isMD5": {
+    "errorMessage": "Value for field '%1$s' must be a valid MD5 hash"
+  },
+  "isJSON": {
+    "errorMessage": "Value for field '%1$s' must be a valid JSON"
+  },
+  "isLatLong": {
+    "errorMessage": "Value for field '%1$s' must be a valid latitude-longitude coordinate in the format lat,long or lat, long"
+  },
+  "isEmpty": {
+    "errorMessage": "Value for field '%1$s' must not be empty"
+  },
+  "isLength": {
+    "errorMessage": "Value for field '%1$s' must have a '%2$s' of '%3$s' characters"
+  },
+  "isByteLength": {
+    "errorMessage": "Value for field '%1$s' must have a '%2$s' of '%3$s' byte lenght characters"
+  },
+  "isPostalCode": {
+    "errorMessage": "Value for field '%1$s' must be a valid postal code"
+  },
+  "isUUID": {
+    "errorMessage": "Value for field '%1$s' must be a valid UUIDv%2$s"
+  },
+  "isMongoId": {
+    "errorMessage": "Value for field '%1$s' must be a valid MongoId Object"
+  },
+  "isAfter": {
+    "errorMessage": "Value for field '%1$s' must be date that's after the specified date"
+  },
+  "isBefore": {
+    "errorMessage": "Value for field '%1$s' must be date that's before the specified date"
+  },
+  "isIn": {
+    "errorMessage": "Value for field '%1$s' must be in array of allowed values"
+  },
+  "isCreditCard": {
+    "errorMessage": "Value for field '%1$s' must be a valid credit card"
+  },
+  "isISIN": {
+    "errorMessage": "Value for field '%1$s' must be a valid stock/security identifier"
+  },
+  "isISRC": {
+    "errorMessage": "Value for field '%1$s' must be a valid ISRC"
+  },
+  "isISBN": {
+    "errorMessage": "Value for field '%1$s' must be a valid ISBN"
+  },
+  "isISSN": {
+    "errorMessage": "Value for field '%1$s' must be a valid ISSN"
+  },
+  "isMobilePhone": {
+    "errorMessage": "Value for field '%1$s' must be a valid mobile phone number"
+  },
+  "isCurrency": {
+    "errorMessage": "Value for field '%1$s' must be a valid currency"
+  },
+  "isISO8601": {
+    "errorMessage": "Value for field '%1$s' must be a valid ISO8601 date"
+  },
+  "isBase64": {
+    "errorMessage": "Value for field '%1$s' must be a valid base64 encoded string"
+  },
+  "isDataURI": {
+    "errorMessage": "Value for field '%1$s' must be in DataURI format"
+  },
+  "isWhitelisted": {
+    "errorMessage": "Value for field '%1$s' must not appear on the defined whitelist"
+  }
+}

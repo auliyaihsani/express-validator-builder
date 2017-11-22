@@ -20,65 +20,65 @@ module.exports = () => {
         index: true,
         trim: true
       },
-      enums: {
-        type: String,
-        enum: ['pending', 'scheduled', 'accomplished'],
-        default: 'pending'
-      },
-      ref: {
-        type: String,
-        ref: `Demo1`,
-        required: true,
-        trim: true
-      },
-      arrRef: [{
-        type: String,
-        ref: `Demo2`,
-        trim: true
-      }],
+      // enums: {
+      //   type: String,
+      //   enum: ['pending', 'scheduled', 'accomplished'],
+      //   default: 'pending'
+      // },
+      // ref: {
+      //   type: String,
+      //   ref: `Demo1`,
+      //   required: true,
+      //   trim: true
+      // },
+      // arrRef: [{
+      //   type: String,
+      //   ref: `Demo2`,
+      //   trim: true
+      // }],
 
-      arrObj: [{
-        destination: {
-          type: String,
-          ref: `Destination`,
-          trim: true
-        },
-        status: {
-          type: String,
-          enum: ['pending', 'scheduled', 'accomplished'],
-          default: 'pending'
-        }
-      }],
+      // arrObj: [{
+      //   destination: {
+      //     type: String,
+      //     ref: `Destination`,
+      //     trim: true
+      //   },
+      //   status: {
+      //     type: String,
+      //     enum: ['pending', 'scheduled', 'accomplished'],
+      //     default: 'pending'
+      //   }
+      // }],
 
-      schemaObj: new Schema({
-        title: {
-          type: String,
-          required: true,
-          trim: true
-        },
-        content: {
-          type: String,
-          required: true,
-          maxlength: 10,
-          trim: true
-        }
-      }, {_id: false}),
+      // schemaObj: new Schema({
+      //   title: {
+      //     type: String,
+      //     required: true,
+      //     trim: true
+      //   },
+      //   content: {
+      //     type: String,
+      //     required: true,
+      //     maxlength: 10,
+      //     trim: true
+      //   }
+      // }, {_id: false}),
 
-      noValidatoin1: {
-        type: Boolean,
-        default: false
-      },
-      noValidatoin2: {
-        type: String,
-        trim: true
-      },
-      noValidatoin3: {
-        type: Number,
-        default: 0
-      },
-      noValidatoin4: {
-        type: Date
-      },
+      // noValidatoin1: {
+      //   type: Boolean,
+      //   default: false
+      // },
+      // noValidatoin2: {
+      //   type: String,
+      //   trim: true
+      // },
+      // noValidatoin3: {
+      //   type: Number,
+      //   default: 0
+      // },
+      // noValidatoin4: {
+      //   type: Date
+      // },
     })
 
     mongoose.model(`TestModel`, schema, 'testmodel')

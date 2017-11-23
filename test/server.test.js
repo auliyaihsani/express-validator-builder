@@ -1,4 +1,3 @@
-
 'use strict'
 
 require('./model')()
@@ -48,7 +47,7 @@ server.use(expressValidator({
 // -- 
 let options = {
   uuid: true,
-  model: 'TestModel'
+  model: mongoose.model('TestModel')
 }
 
 let builder = new ValidationBuilder(options)

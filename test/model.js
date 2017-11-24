@@ -12,14 +12,14 @@ module.exports = () => {
         required: true,
         trim: true
       },
-      email: {
-        type: String,
-        maxlength: 50,
-        required: true,
-        unique: true,
-        index: true,
-        trim: true
-      },
+      // email: {
+      //   type: String,
+      //   maxlength: 50,
+      //   required: true,
+      //   unique: true,
+      //   index: true,
+      //   trim: true
+      // },
       // enums: {
       //   type: String,
       //   enum: ['pending', 'scheduled', 'accomplished'],

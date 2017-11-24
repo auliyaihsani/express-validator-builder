@@ -1,4 +1,12 @@
 {
+  "unique":  {
+    "options": ["model", "path"],
+    "errorMessage": "Expecting unique value in '${path}' field"
+  },
+  "isUUID": {
+    "options": ["version"],
+    "errorMessage": "Value for field '%1$s' must be a valid UUIDv%2$s"
+  },
   "isEmail": {
     "errorMessage": "Value for field '%1$s' must be a valid email address"
   },
@@ -91,9 +99,6 @@
   },
   "isPostalCode": {
     "errorMessage": "Value for field '%1$s' must be a valid postal code"
-  },
-  "isUUID": {
-    "errorMessage": "Value for field '%1$s' must be a valid UUIDv%2$s"
   },
   "isMongoId": {
     "errorMessage": "Value for field '%1$s' must be a valid MongoId Object"

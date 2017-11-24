@@ -1,25 +1,28 @@
-/* global describe, it */
 'use strict'
 
 require('./model')()
-
-const should = require('should')
 const mongoose = require('mongoose')
 const ValidationBuilder = require('../index')
+const customValidation = require('./custom-validator')
 
-describe('Builder Test', function () {
-  describe('# Start', function () {
-    it('should start the app', function (done) {
-      let options = {
-        uuid: true,
-        model: 'TestModel'
-      }
+let options = {
+  uuid: true,
+  model: mongoose.model('TestModel')
+}
 
-      let builder = new ValidationBuilder(options)
-      let validationScema = builder.build()
+let validations = new ValidationBuilder(options)
 
-      console.log('zz', JSON.stringify(validationScema))
-      done()
-    })
-  })
-})
+  
+let schema = validations
+  // .pickByLoc({query: ['_id'], params: ['email']})
+  // .select(['_id', 'enums', 'ref'])
+  // .location('body')
+  // .exclude('enums')
+  .build()
+
+console.dir(schema)
+// console.log(JSON.stringify(schema))
+
+// validations.fecthCustomKeys(customValidation.customValidators)
+// validations.add('obj.path', ['required', 'unique'], false)
+// console.log(validations.get('obj.path'))

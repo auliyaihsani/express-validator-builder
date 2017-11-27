@@ -10,10 +10,12 @@ module.exports = () => {
       _id: {
         type: String,
         required: true,
+        unique: true,
         trim: true
       },
       // email: {
       //   type: String,
+      //   minlength: 10,
       //   maxlength: 50,
       //   required: true,
       //   unique: true,

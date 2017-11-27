@@ -1,14 +1,33 @@
 {
-  "unique":  {
-    "options": ["model", "path"],
-    "errorMessage": "Expecting unique value in '%(path)s' field"
+  "isLength": {
+    "options": ["min:?", "max:?"],
+    "errorMessage": "Value for field '%1$s' must have a minimum length of %2$s and maximum length of %3$s characters"
   },
   "isUUID": {
     "options": ["version"],
-    "errorMessage": "Value for field '%(path)s' must be a valid UUIDv%(version)s"
+    "errorMessage": "Value for field '%1$s' must be a valid UUIDv%2$s"
   },
   "isEmail": {
     "errorMessage": "Value for field '%1$s' must be a valid email address"
+  },
+  "notEmpty": {
+    "errorMessage": "Value for field '%1$s' should not be empty"
+  },
+  "unique":  {
+    "options": ["modelName", "path"],
+    "errorMessage": "Expecting unique value in '%1$s' field"
+  },
+  "minlength": {
+    "options": ["min:?"],
+    "errorMessage": "Field '%1$s' must be atleast in %2$s character(s)."
+  },
+  "maxlength": {
+    "options": ["max:?"],
+    "errorMessage": "Field '%1$s' must not exceed in %2$s character(s)."
+  },
+  "enum": {
+    "options": ["match"],
+    "errorMessage": "Can't find match value on enum field '%1$s'. Expecting '%2$s'"
   },
   "isURL": {
     "errorMessage": "Value for field '%1$s' must be a valid url"
@@ -90,9 +109,6 @@
   },
   "isEmpty": {
     "errorMessage": "Value for field '%1$s' must not be empty"
-  },
-  "isLength": {
-    "errorMessage": "Value for field '%1$s' must have a '%2$s' of '%3$s' characters"
   },
   "isByteLength": {
     "errorMessage": "Value for field '%1$s' must have a '%2$s' of '%3$s' byte lenght characters"

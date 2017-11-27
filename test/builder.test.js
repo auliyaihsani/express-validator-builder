@@ -7,7 +7,8 @@ const customValidation = require('./custom-validator')
 
 let options = {
   uuid: true,
-  model: mongoose.model('TestModel')
+  model: mongoose.model('TestModel'),
+  template: require('./template')
 }
 
 let validations = new ValidationBuilder(options)
@@ -23,6 +24,6 @@ let schema = validations
 console.dir(JSON.stringify(schema))
 // console.log(JSON.stringify(schema))
 
-// validations.fecthCustomKeys(customValidation.customValidators)
+// validations.fetchCustomKeys(customValidation.customValidators)
 // validations.add('obj.path', ['required', 'unique'], false)
 // console.log(validations.get('obj.path'))

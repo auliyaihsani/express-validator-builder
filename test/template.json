@@ -1,0 +1,10 @@
+{
+  "unique":  {
+    "options": ["model", "path"],
+    "errorMessage": "Expecting unique value in '%(path)s' field"
+  },
+  "validator2": {
+    "options": ["a", "b", "c", "d", "e"],
+    "errorMessage": "this is a test for filed '%(path)s'"
+  }
+}

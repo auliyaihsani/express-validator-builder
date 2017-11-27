@@ -1,0 +1,5 @@
+{
+  "unique":  {
+    "errorMessage": "Expecting unique value in '%1$s' field"
+  }
+}

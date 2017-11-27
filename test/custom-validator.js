@@ -35,10 +35,6 @@ module.exports = {
           reject(err)
         })
       })
-    },
-    validator2: (a, b, c, d, e) => {
-      return false
     }
-    
   }
 }

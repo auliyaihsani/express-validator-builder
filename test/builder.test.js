@@ -8,12 +8,14 @@ const customValidation = require('./custom-validator')
 let options = {
   uuid: true,
   model: mongoose.model('TestModel'),
-  template: require('./template')
+  template: require('./message-template'),
+  validatorOptions: {
+    // unique: ['TestModel', '_id']
+  }
 }
 
 let validations = new ValidationBuilder(options)
 
-  
 let schema = validations
   // .pickByLoc({query: ['_id'], params: ['email']})
   // .select(['_id', 'enums', 'ref'])
@@ -21,8 +23,8 @@ let schema = validations
   // .exclude('enums')
   .build()
 
-console.dir(JSON.stringify(schema))
-// console.log(JSON.stringify(schema))
+console.log(schema)
+console.log('\n---', JSON.stringify(schema))
 
 // validations.fetchCustomKeys(customValidation.customValidators)
 // validations.add('obj.path', ['required', 'unique'], false)

@@ -1,0 +1,11 @@
+{
+  "minlength": {
+    "errorMessage": "Field '%1$s' must be atleast in %2$s character(s)."
+  },
+  "maxlength": {
+    "errorMessage": "Field '%1$s' must not exceed in %2$s character(s)."
+  },
+  "enum": {
+    "errorMessage": "Can't find match value on enum field '%1$s'. Expecting '%2$s'"
+  },
+}

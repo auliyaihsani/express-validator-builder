@@ -20,7 +20,7 @@ let schema = validations
   // .exclude('enums')
   .build()
 
-console.dir(schema)
+console.dir(JSON.stringify(schema))
 // console.log(JSON.stringify(schema))
 
 // validations.fecthCustomKeys(customValidation.customValidators)

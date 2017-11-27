@@ -1,11 +1,11 @@
 {
   "unique":  {
     "options": ["model", "path"],
-    "errorMessage": "Expecting unique value in '${path}' field"
+    "errorMessage": "Expecting unique value in '%(path)s' field"
   },
   "isUUID": {
     "options": ["version"],
-    "errorMessage": "Value for field '%1$s' must be a valid UUIDv%2$s"
+    "errorMessage": "Value for field '%(path)s' must be a valid UUIDv%(version)s"
   },
   "isEmail": {
     "errorMessage": "Value for field '%1$s' must be a valid email address"
